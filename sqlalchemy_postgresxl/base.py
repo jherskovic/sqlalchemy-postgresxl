@@ -1,13 +1,14 @@
-from sqlalchemy import sql, schema, types, exc, pool
-from sqlalchemy.sql import compiler, expression
-from sqlalchemy.engine import default, base, reflection
-from sqlalchemy import processors
+# sqlalchemy_postgresxl/base.py
+# Copyright (C) 2019 Jorge R. Herskovic <jherskovic@gmail.com>
+# This work is based in part on the SQLAlchemy postgres dialect code written by the SQLAlchemy authors.
+#
+# Some parts are based on the Access adapter for SQLAlchemy by Mike Bayer, available at
+# https://bitbucket.org/zzzeek/sqlalchemy-access/src/default/
+# This module is released under
+# the MIT License: http://www.opensource.org/licenses/mit-license.php
 
 from sqlalchemy.dialects.postgresql.base import *
 from sqlalchemy.exc import NotSupportedError
-
-class PostgresXLIdentifierPreparer(PGIdentifierPreparer):
-    pass
 
 
 class PostgresXLDDLCompiler(PGDDLCompiler):
