@@ -14,7 +14,7 @@ It accepts two different drivers:
 and it adds two table-level options:
 
 - ``postgresxl_distribute_by``: ``[hash|modulo|replication|roundrobin]``
-- ``postgresxl_distribute_column``: [name of the column to hash or modulo on; required for those two distribution mode]
+- ``postgresxl_distribute_column``: [name of the column to hash or modulo on; required for those two distribution modes]
 
 ``postgresxl_distribute_column`` is ignored if the ``distribute_by`` option is ``replication`` or ``roundrobin``.
 
